@@ -1,0 +1,575 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+.logo{
+  width: 200px;
+}
+
+body {
+  background-color: #121212;
+  padding: 0px;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+section.HomePage {
+  margin: auto 100px;
+  margin-top: 50px;
+  width: auto;
+  max-width: 250px;
+  font-size: medium;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.HomePage h1,
+section.HomePage h2 {
+  margin: 5px 0px;
+  color: white;
+}
+
+div.Brief {
+  margin: auto 100px;
+  width: auto;
+  max-width: 250px;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: justify;
+  color: white;
+}
+
+img.Programador {
+  padding: 50px;
+  margin-left: 150%;
+  margin-top: -450px;
+  width: 500px;
+  background-attachment: fixed;
+}
+
+@keyframes float {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: 30px;
+  }
+}
+
+img.Programador {
+  position: relative;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 4.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.Links {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Links a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.CV {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.CS, .Project, .Email {
+  text-decoration: underline 2px rgba(101, 24, 180, 1) solid;
+  color: white;
+  padding: 1px;
+  margin: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.3s;
+}
+
+.CS:hover, .Project:hover, .Email:hover .dropbtn:hover{
+  transform: scale(1.3); /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+.FirstChance {
+  margin: auto 100px;
+  width: auto;
+  max-width: 250px;
+  font-size: medium;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: white;
+  padding-top: 50px;
+  align-items: flex-start;
+}
+
+.FirstChance img {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.FirstChance .container {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.FirstChance h1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.FirstChance .container > * {
+  margin: auto;
+}
+
+.pigimg{
+  border-radius: 20%;
+}
+
+.FirstChance img.RPS,
+.FirstChance img.PigLatin,
+.FirstChance .SecondRow img {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  width: 180px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  border-radius: 20%;
+}
+
+.FirstRow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.FirstChance .opportunity {
+  max-width: none;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.FirstRow,
+.SecondRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.FirstRow a,
+.SecondRow img {
+  margin: 0 10px;
+}
+
+.FirstChance {
+  position: relative; /* Set position relative to contain absolute positioning of children */
+}
+
+.FirstRow,
+.SecondRow {
+  position: absolute;
+  bottom: 60px; /* Adjust this value as needed */
+  left: 0;
+}
+
+.SecondRow {
+  left: calc(50% - -350px); /* Adjust width of .FirstRow */
+  bottom: -30px;
+}
+
+.FirstRow{
+  left: calc(50% - -350px); /* Adjust width of .FirstRow */
+  top: calc(100% - 500px);
+}
+
+
+.skills{
+  margin: auto 100px;
+  margin-top: 100px;
+  width: auto;
+  max-width: 250px;
+  font-size: medium;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: white;
+  padding-top: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #121212;
+  text-decoration: underline 2px rgba(101, 24, 180, 1);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #121212;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(101, 24, 180, 1);
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #121212;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+#name {
+  margin: 0;
+  font-size: 24px;
+}
+
+#job {
+  margin: 0;
+  font-size: 18px;
+}
+
+.textbox{
+  margin-left: 900px;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-top: -230px;
+  overflow: hidden;
+}
+
+.pezinho{
+  background-color: rgba(101, 24, 180, 1);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.react-container {
+  position: relative;
+  width: 150px; /* Largura da imagem React */
+  margin-left: 90px;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-top: -15px;
+
+}
+
+.react {
+  margin-left: 600px;
+  width: 120px;
+  margin-bottom: 10px;
+  margin-top: -505px;
+  display: block;
+}
+
+.textbox {
+  position: absolute;
+  top: calc(100% - 150px);
+  left: calc(50% - 150px);
+  transform: translateX(-50%);
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: left justify;
+  font-size: 12px;
+  display: none;
+  transition: opacity 10s ease-in-out;
+}
+
+.react-container:hover .textbox {
+  display: block;
+}
+
+
+.react-container {
+  position: relative;
+  width: 150px; /* Largura da imagem React */
+  margin-left: 90px;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-top: -15px;
+
+}
+
+
+.js-container {
+  position: relative;
+  width: 150px; /* Largura da imagem JavaScript */
+  margin-left: 900px; /* Ajuste conforme necessário */
+  margin-bottom: 100px;
+  margin-top: -15px;
+}
+
+.js {
+  display: block;
+  float: right;
+  margin-left: 900px;
+  width: 100px;
+  margin-bottom: 100px;
+  margin-top: -300px;
+}
+
+
+.textbox-js {
+  position: absolute;
+  top: calc(100% - 180px);
+  transform: translateX(-50%);
+  left: calc(50% + 380px);
+  background-color: #121212;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  text-align: left justify;
+  font-size: 12px;
+  display: none;
+  transition: opacity 10s ease-in-out;
+
+}
+
+.js-container:hover .textbox-js {
+  display: block;
+}
+
+.js-container {
+  position: relative;
+  width: 150px; /* Largura da imagem JavaScript */
+  margin-left: 850px; /* Ajuste conforme necessário */
+  margin-bottom: -90px;
+  margin-top: -10px;
+}
+
+.css-container {
+  position: relative;
+  width: 150px; /* Largura da imagem JavaScript */
+  margin-left: 100px; /* Ajuste conforme necessário */
+  margin-bottom: 100px;
+  margin-top: -15px;
+}
+
+  .css {
+    display:block;
+    float: right;
+    margin-left: 100px;
+    width: 100px;
+    margin-bottom: 100px;
+    margin-top: -30px;
+  }
+
+
+
+.textbox-css {
+  position: absolute;
+  top: calc(100% - 100px);
+  transform: translateX(-50%);
+  left: calc(50% + 450px);
+  background-color: #121212;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  text-align: left justify;
+  font-size: 12px;
+  display: none;
+  transition: opacity 10s ease-in-out;
+
+}
+
+.css-container:hover .textbox-css {
+  display: block;
+}
+
+.css-container {
+  position: relative;
+  width: 150px; /* Largura da imagem JavaScript */
+  margin-left: 850px; /* Ajuste conforme necessário */
+  margin-bottom: -90px;
+  margin-top: -10px;
+}
+
+
+.html-container {
+  position: relative;
+  width: 150px; /* Largura da imagem React */
+  margin-left: 90px;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-top: -15px;
+
+}
+
+  .html{
+    display: block;
+    float: right;
+    margin-left: 300px;
+    width: 100px;
+    margin-bottom: 100px;
+    margin-top: -80px;
+  
+  }
+
+.textbox-html {
+  position: absolute;
+  top: calc(100% - 300px);
+  left: calc(50% + 200px);
+  transform: translateX(-50%);
+  background-color: #121212;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  text-align: left justify;
+  font-size: 12px;
+  display: none;
+  transition: opacity 10s ease-in-out;
+}
+
+.html-container:hover .textbox-html {
+  display: block;
+}
+
+
+.html-container {
+  position: relative;
+  width: 120px; /* Largura da imagem React */
+  margin-left: 1200px;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-top: -70px;
+}
+
+
+.rpsP-container {
+  position: relative;
+  display: inline-block;
+}
+
+.rpsP {
+  display: none;
+  position: absolute;
+  bottom: calc(100% - 350px);
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #121212;
+  padding: 10px;
+  width: 200px; /* Ajuste conforme necessário */
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.RPS:hover .rpsP {
+  display: block;
+}
+
+.pigp-container {
+  position: relative;
+  display: inline-block;
+}
+
+.pigp {
+  display: none;
+  position: absolute;
+  bottom: calc(100% - 350px);
+  left: 74%;
+  transform: translateX(-50%);
+  background-color: #121212;
+  padding: 10px;
+  width: 200px; /* Ajuste conforme necessário */
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.RPS:hover .pigp {
+  display: block;
+}
