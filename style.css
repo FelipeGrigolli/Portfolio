@@ -19,7 +19,7 @@ header.hide {
   transform: translateY(-100%);
 }
 
-.logo{
+.logo {
   width: 200px;
 }
 
@@ -72,10 +72,10 @@ img.Programador {
 
 @keyframes float {
   0% {
-      top: 0;
+    top: 0;
   }
   100% {
-      top: 30px;
+    top: 30px;
   }
 }
 
@@ -117,8 +117,10 @@ img.Programador {
   margin-bottom: 60px;
 }
 
-.CS, .Project, .Email {
-  text-decoration: underline 2px rgba(101, 24, 180, 1) solid;
+.CS,
+.Project,
+.Email {
+  text-decoration: underline 2px rgba(101, 24, 180, 1);
   color: white;
   padding: 1px;
   margin: 40px;
@@ -128,12 +130,16 @@ img.Programador {
   transition: transform 0.3s;
 }
 
-.CS:hover, .Project:hover, .Email:hover .dropbtn:hover{
+.CS:hover,
+.Project:hover,
+.Email:hover .dropbtn:hover {
   transform: scale(1.3); /* Aumenta o tamanho do link ao passar o mouse */
 }
 
 .FirstChance {
   margin: auto 100px;
+  margin-top: -300px;
+  margin-bottom: 100px;
   width: auto;
   max-width: 250px;
   font-size: medium;
@@ -169,31 +175,19 @@ img.Programador {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.FirstChance .container > * {
+.FirstChance .container>* {
   margin: auto;
 }
 
-.pigimg{
-  border-radius: 20%;
+.pokedex {
+  width: 220px;
 }
 
-.FirstChance img.RPS,
-.FirstChance img.PigLatin,
-.FirstChance .SecondRow img {
-  display: block;
-  float: right;
-  margin-right: 20px;
-  width: 180px;
-  margin-bottom: 45px;
-  margin-top: 45px;
-  border-radius: 20%;
+.pigimg {
+  border-radius: 0%;
 }
 
-.FirstRow::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .FirstChance .opportunity {
   max-width: none;
@@ -205,42 +199,12 @@ html {
 }
 
 
-.FirstRow,
-.SecondRow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.FirstRow a,
-.SecondRow img {
-  margin: 0 10px;
-}
-
 .FirstChance {
   position: relative; /* Set position relative to contain absolute positioning of children */
 }
 
-.FirstRow,
-.SecondRow {
-  position: absolute;
-  bottom: 60px; /* Adjust this value as needed */
-  left: 0;
-}
 
-.SecondRow {
-  left: calc(50% - -350px); /* Adjust width of .FirstRow */
-  bottom: -30px;
-}
-
-.FirstRow{
-  left: calc(50% - -350px); /* Adjust width of .FirstRow */
-  top: calc(100% - 500px);
-}
-
-
-.skills{
+.skills {
   margin: auto 100px;
   margin-top: 100px;
   width: auto;
@@ -255,7 +219,6 @@ html {
   align-items: center;
   margin-bottom: 100px;
 }
-
 
 .dropdown {
   position: relative;
@@ -281,7 +244,7 @@ html {
   background-color: #121212;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(101, 24, 180, 1);
-  z-index: 1;
+  z-index: 1000;
   transition: transform 0.3s;
 }
 
@@ -314,7 +277,7 @@ html {
   font-size: 18px;
 }
 
-.textbox{
+.textbox {
   margin-left: 900px;
   width: 150px;
   margin-bottom: 100px;
@@ -322,7 +285,7 @@ html {
   overflow: hidden;
 }
 
-.pezinho{
+.pezinho {
   background-color: rgba(101, 24, 180, 1);
   text-align: center;
   color: white;
@@ -337,7 +300,6 @@ html {
   width: 150px;
   margin-bottom: 100px;
   margin-top: -15px;
-
 }
 
 .react {
@@ -367,7 +329,6 @@ html {
   display: block;
 }
 
-
 .react-container {
   position: relative;
   width: 150px; /* Largura da imagem React */
@@ -375,9 +336,7 @@ html {
   width: 150px;
   margin-bottom: 100px;
   margin-top: -15px;
-
 }
-
 
 .js-container {
   position: relative;
@@ -396,7 +355,6 @@ html {
   margin-top: -300px;
 }
 
-
 .textbox-js {
   position: absolute;
   top: calc(100% - 180px);
@@ -411,7 +369,6 @@ html {
   font-size: 12px;
   display: none;
   transition: opacity 10s ease-in-out;
-
 }
 
 .js-container:hover .textbox-js {
@@ -434,22 +391,20 @@ html {
   margin-top: -15px;
 }
 
-  .css {
-    display:block;
-    float: right;
-    margin-left: 100px;
-    width: 100px;
-    margin-bottom: 100px;
-    margin-top: -30px;
-  }
-
-
+.css {
+  display: block;
+  float: right;
+  margin-left: 100px;
+  width: 100px;
+  margin-bottom: 100px;
+  margin-top: -30px;
+}
 
 .textbox-css {
   position: absolute;
-  top: calc(100% - 100px);
+  top: calc(100% - 300px);
   transform: translateX(-50%);
-  left: calc(50% + 450px);
+  left: calc(50% + 370px);
   background-color: #121212;
   padding: 10px;
   width: 150px;
@@ -459,7 +414,6 @@ html {
   font-size: 12px;
   display: none;
   transition: opacity 10s ease-in-out;
-
 }
 
 .css-container:hover .textbox-css {
@@ -474,7 +428,6 @@ html {
   margin-top: -10px;
 }
 
-
 .html-container {
   position: relative;
   width: 150px; /* Largura da imagem React */
@@ -482,18 +435,16 @@ html {
   width: 150px;
   margin-bottom: 100px;
   margin-top: -15px;
-
 }
 
-  .html{
-    display: block;
-    float: right;
-    margin-left: 300px;
-    width: 100px;
-    margin-bottom: 100px;
-    margin-top: -80px;
-  
-  }
+.html {
+  display: block;
+  float: right;
+  margin-left: 300px;
+  width: 100px;
+  margin-bottom: 100px;
+  margin-top: -80px;
+}
 
 .textbox-html {
   position: absolute;
@@ -515,61 +466,110 @@ html {
   display: block;
 }
 
-
 .html-container {
   position: relative;
-  width: 120px; /* Largura da imagem React */
+  width: 120px;
   margin-left: 1200px;
   width: 150px;
   margin-bottom: 100px;
   margin-top: -70px;
 }
 
-
-.rpsP-container {
-  position: relative;
-  display: inline-block;
+.slider {
+  margin-top: -400px;
+  margin-left: 600px;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
 }
 
-.rpsP {
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
   display: none;
-  position: absolute;
-  bottom: calc(100% - 350px);
-  left: 20%;
-  transform: translateX(-50%);
-  background-color: #121212;
-  padding: 10px;
-  width: 200px; /* Ajuste conforme necessário */
-  border-radius: 5px;
-  color: white;
-  font-size: 12px;
-  text-align: justify;
 }
 
-.RPS:hover .rpsP {
-  display: block;
-}
-
-.pigp-container {
+.slide {
+  width: 25%;
   position: relative;
-  display: inline-block;
 }
 
-.pigp {
-  display: none;
+.slide img {
+  width: 50%;
+}
+
+.manual-navigation {
   position: absolute;
-  bottom: calc(100% - 350px);
-  left: 74%;
-  transform: translateX(-50%);
-  background-color: #121212;
-  padding: 10px;
-  width: 200px; /* Ajuste conforme necessário */
-  border-radius: 5px;
-  color: white;
-  font-size: 12px;
-  text-align: justify;
+  width: 400px;
+  display: flex;
+  margin-top: -120px;
+  justify-content: center;
+  color: rgba(101, 24, 180, 1);
 }
 
-.RPS:hover .pigp {
-  display: block;
+.manual-btn {
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: rgba(101, 24, 180, 1);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div{
+  border: 2px solid rgba(101, 24, 180, 1);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 400px;
+  margin-top: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: rgba(101, 24, 180, 1);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: rgba(101, 24, 180, 1);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: rgba(101, 24, 180, 1);
+}
+
+
