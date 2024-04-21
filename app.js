@@ -58,18 +58,21 @@ window.addEventListener('scroll', function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
-let count = 1;
-document.getElementById("radio1").checked = true;
+document.addEventListener('DOMContentLoaded', function() {
 
-setInterval(function(){
-  nextImage();
-}, 2000);
+  let count = 1;
+  document.getElementById("radio1").checked = true;
 
-function nextImage(){
-  count++;
-  if(count>3){
-    count = 1;
+  setInterval(function(){
+    nextImage();
+  }, 2000);
+
+  function nextImage(){
+    count++;
+    if(count>3){
+      count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
   }
-
-  document.getElementById("radio"+count).checked = true;
-}
+});
